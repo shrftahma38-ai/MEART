@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000" role="img">
+<defs>
+<linearGradient id="bgg1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#171717"/><stop offset="0.55" stop-color="#101010"/><stop offset="1" stop-color="#0b0b0b"/></linearGradient>
+<radialGradient id="glowg1" cx="50%" cy="45%" r="62%"><stop offset="0" stop-color="#a01212" stop-opacity="0.42"/><stop offset="0.55" stop-color="#a01212" stop-opacity="0.10"/><stop offset="1" stop-color="#a01212" stop-opacity="0"/></radialGradient>
+<linearGradient id="meatg1" x1="0.1" y1="0" x2="0.9" y2="1"><stop offset="0" stop-color="#4a2323"/><stop offset="0.5" stop-color="#33191b"/><stop offset="1" stop-color="#231213"/></linearGradient>
+<pattern id="gridg1" width="34" height="34" patternUnits="userSpaceOnUse" patternTransform="rotate(28)"><line x1="0" y1="0" x2="0" y2="34" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1.4"/></pattern>
+<filter id="softg1" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="46"/></filter>
+<clipPath id="clipg1"><path d="M 270.0 460.0 C 270.0 226.0, 373.5 153.2, 500.0 187.0 C 642.6 213.0, 757.6 350.8, 741.5 506.8 C 730.0 673.2, 596.6 735.6, 449.4 709.6 C 311.4 683.6, 270.0 616.0, 270.0 460.0 Z"/></clipPath>
+</defs>
+<rect width="1000" height="1000" fill="url(#bgg1)"/>
+<rect width="1000" height="1000" fill="url(#gridg1)"/>
+<ellipse cx="500.0" cy="460.0" rx="437.0" ry="442.0" fill="#a01212" opacity="0.5" filter="url(#softg1)"/>
+<rect width="1000" height="1000" fill="url(#glowg1)"/>
+<rect x="224.0" y="226.0" width="552.0" height="130.0" rx="12" fill="#2a1a1a" stroke="#5a2a2a" stroke-width="2"/>
+<rect x="224.0" y="413.2" width="552.0" height="130.0" rx="12" fill="#2a1a1a" stroke="#5a2a2a" stroke-width="2"/>
+<rect x="224.0" y="600.4" width="552.0" height="130.0" rx="12" fill="#2a1a1a" stroke="#5a2a2a" stroke-width="2"/>
+<rect x="80.0" y="830.0" width="70.0" height="3" fill="#a01212"/>
+<text x="500.0" y="900.0" text-anchor="middle" direction="rtl" font-family="Tahoma, 'Segoe UI', Arial, sans-serif" font-size="58" font-weight="bold" fill="#ffffff">ویترین فروشگاه</text>
+<text x="500.0" y="955.0" text-anchor="middle" direction="rtl" font-family="Tahoma, 'Segoe UI', Arial, sans-serif" font-size="31" letter-spacing="1" fill="#cccccc" fill-opacity="0.85">گوشت شهروند</text>
+</svg>

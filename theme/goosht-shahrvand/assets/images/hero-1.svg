@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img">
+<defs>
+<linearGradient id="bgh1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#171717"/><stop offset="0.55" stop-color="#101010"/><stop offset="1" stop-color="#0b0b0b"/></linearGradient>
+<radialGradient id="glowh1" cx="50%" cy="45%" r="62%"><stop offset="0" stop-color="#a01212" stop-opacity="0.42"/><stop offset="0.55" stop-color="#a01212" stop-opacity="0.10"/><stop offset="1" stop-color="#a01212" stop-opacity="0"/></radialGradient>
+<linearGradient id="meath1" x1="0.1" y1="0" x2="0.9" y2="1"><stop offset="0" stop-color="#4a2323"/><stop offset="0.5" stop-color="#33191b"/><stop offset="1" stop-color="#231213"/></linearGradient>
+<pattern id="gridh1" width="34" height="34" patternUnits="userSpaceOnUse" patternTransform="rotate(28)"><line x1="0" y1="0" x2="0" y2="34" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1.4"/></pattern>
+<filter id="softh1" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="46"/></filter>
+<clipPath id="cliph1"><path d="M 432.0 414.0 C 432.0 203.4, 597.6 137.88, 800.0 168.29999999999998 C 1028.16 191.70000000000002, 1212.16 315.72, 1186.4 456.12 C 1168.0 605.88, 954.56 662.04, 719.04 638.64 C 498.24 615.24, 432.0 554.4, 432.0 414.0 Z"/></clipPath>
+</defs>
+<rect width="1600" height="900" fill="url(#bgh1)"/>
+<rect width="1600" height="900" fill="url(#gridh1)"/>
+<ellipse cx="800.0" cy="414.0" rx="699.1999999999999" ry="397.8" fill="#a01212" opacity="0.5" filter="url(#softh1)"/>
+<rect width="1600" height="900" fill="url(#glowh1)"/>
+<path d="M 432.0 414.0 C 432.0 203.4, 597.6 137.88, 800.0 168.29999999999998 C 1028.16 191.70000000000002, 1212.16 315.72, 1186.4 456.12 C 1168.0 605.88, 954.56 662.04, 719.04 638.64 C 498.24 615.24, 432.0 554.4, 432.0 414.0 Z" fill="url(#meath1)" stroke="#6d2b2b" stroke-width="3"/>
+<g clip-path="url(#cliph1)"><path d="M 450.40000000000003 315.72 C 689.6 264.24, 892.0 362.52000000000004, 1149.6 301.68" fill="none" stroke="#e9d3cb" stroke-opacity="0.30" stroke-width="2.6" stroke-linecap="round"/><path d="M 450.40000000000003 385.92 C 689.6 334.44, 892.0 432.72, 1149.6 371.88" fill="none" stroke="#e9d3cb" stroke-opacity="0.30" stroke-width="2.6" stroke-linecap="round"/><path d="M 450.40000000000003 460.8 C 689.6 409.32, 892.0 507.6, 1149.6 446.76" fill="none" stroke="#e9d3cb" stroke-opacity="0.30" stroke-width="2.6" stroke-linecap="round"/><path d="M 450.40000000000003 531.0 C 689.6 479.52, 892.0 577.8, 1149.6 516.96" fill="none" stroke="#e9d3cb" stroke-opacity="0.30" stroke-width="2.6" stroke-linecap="round"/></g>
+<rect x="128.0" y="747.0" width="112.00000000000001" height="3" fill="#a01212"/>
+<text x="800.0" y="810.0" text-anchor="middle" direction="rtl" font-family="Tahoma, 'Segoe UI', Arial, sans-serif" font-size="52" font-weight="bold" fill="#ffffff">استیک ریب‌آی</text>
+<text x="800.0" y="859.5" text-anchor="middle" direction="rtl" font-family="Tahoma, 'Segoe UI', Arial, sans-serif" font-size="28" letter-spacing="1" fill="#cccccc" fill-opacity="0.85">برش تازه گوساله</text>
+</svg>

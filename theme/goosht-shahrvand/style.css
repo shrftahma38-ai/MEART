@@ -1,0 +1,123 @@
+/*
+Theme Name: Goosht Shahrvand
+Theme URI: https://github.com/shrftahma38-ai/MEART
+Author: Shahrvand
+Author URI: https://github.com/shrftahma38-ai/MEART
+Description: قالب راست‌چین و فارسی فروشگاه گوشت و پروتئین «گوشت شهروند». طراحی تیره با رنگ تأکیدی قرمز، اسلایدر تمام‌عرض، بخش درباره ما، کاروسل محصولات، گالری تصاویر با لایت‌باکس، بخش تماس با نقشه و پشتیبانی کامل از ووکامرس.
+Version: 1.0.0
+Requires at least: 5.9
+Tested up to: 6.6
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: goosht-shahrvand
+Tags: rtl-language-support, blog, e-commerce, custom-logo, custom-menu, featured-images, translation-ready, two-columns, right-sidebar, threaded-comments, sticky-post
+*/
+
+/*
+ * This file carries the theme header and the design tokens.
+ * All component styles live in assets/css/main.css and are enqueued after this file,
+ * so customizer values (printed inline on the main stylesheet) always win.
+ */
+
+:root {
+	--gsh-accent: #a01212;
+	--gsh-accent-dark: #6f0b0b;
+	--gsh-bg: #1a1a1a;
+	--gsh-panel: #232323;
+	--gsh-text: #ffffff;
+	--gsh-muted: #cccccc;
+	--gsh-line: rgba(255, 255, 255, 0.09);
+	--gsh-font-body: "Vazirmatn", "Segoe UI", Tahoma, sans-serif;
+	--gsh-font-head: "Noto Naskh Arabic", "Vazirmatn", Tahoma, serif;
+	--gsh-container: 1200px;
+	--gsh-radius: 6px;
+}
+
+/* Every element is sized including its padding/border, so padded full-width blocks
+ * (the .gsh-container wrapper in particular) never grow wider than the viewport. */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Base typography: the theme is Persian and RTL by default. */
+body {
+	margin: 0;
+	background-color: var(--gsh-bg);
+	color: var(--gsh-text);
+	font-family: var(--gsh-font-body);
+	font-size: 16px;
+	line-height: 1.9;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--gsh-font-head);
+	font-weight: 700;
+	line-height: 1.5;
+	margin: 0 0 0.6em;
+}
+
+a {
+	color: var(--gsh-text);
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* WordPress required helpers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	/* Explicit insets: an absolutely positioned element without them keeps its static
+	   position, which can sit far outside the layout box (e.g. in an overflowing
+	   carousel) and stretch the page's scroll width. */
+	inset-block-start: 0;
+	inset-inline-start: 0;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+	background-color: var(--gsh-panel);
+	clip: auto !important;
+	clip-path: none;
+	color: var(--gsh-text);
+	display: block;
+	font-size: 0.9rem;
+	height: auto;
+	inset-inline-start: 16px;
+	inset-block-start: 16px;
+	line-height: normal;
+	padding: 12px 20px;
+	text-decoration: none;
+	width: auto;
+	z-index: 100000;
+}
+
+.alignleft {
+	float: inline-start;
+	margin-inline-end: 1.5em;
+}
+
+.alignright {
+	float: inline-end;
+	margin-inline-start: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-inline: auto;
+}

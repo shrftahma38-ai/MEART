@@ -1,0 +1,97 @@
+# Base44 sandbox environment for the Goosht Shahrvand WordPress theme.
+#
+# * WordPress + MySQL run from stock upstream images (infrastructure). The editable code —
+#   the theme — is bind-mounted from ./theme/goosht-shahrvand, so edits are live on the next
+#   request and never need an image rebuild.
+# * The web entry point is published on host port 3000, which is the Base44 preview port.
+# * /download/ is served straight from ./dist (a real directory, so Apache returns it without
+#   touching WordPress) and hosts the installable theme ZIP.
+services:
+  db:
+    image: mysql:8.0
+    restart: on-failure
+    command:
+      - --default-authentication-plugin=mysql_native_password
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+    environment:
+      - MYSQL_DATABASE=wordpress
+      - MYSQL_USER=wordpress
+      - MYSQL_PASSWORD=wordpress
+      - MYSQL_ROOT_PASSWORD=base44-root
+    volumes:
+      - db_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-uwordpress", "-pwordpress"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 40s
+
+  wordpress:
+    image: wordpress:php8.2-apache
+    restart: on-failure
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "3000:80"
+    environment:
+      - WORDPRESS_DB_HOST=db:3306
+      - WORDPRESS_DB_NAME=wordpress
+      - WORDPRESS_DB_USER=wordpress
+      - WORDPRESS_DB_PASSWORD=wordpress
+      - WORDPRESS_TABLE_PREFIX=wp_
+      - WORDPRESS_DEBUG=0
+      # Read by sandbox/mu-plugins/00-base44-preview.php; the overrides only apply when the
+      # platform passes the flag through as BASE44_PREVIEW_MODE=1.
+      - BASE44_PREVIEW_MODE
+      - BASE44_PUBLIC_HOST_SUFFIX=${BASE44_PUBLIC_HOST_SUFFIX}
+      - BASE44_SANDBOX_HOST_DOMAIN=${BASE44_SANDBOX_HOST_DOMAIN}
+    volumes:
+      - wp_data:/var/www/html
+      - ./theme/goosht-shahrvand:/var/www/html/wp-content/themes/goosht-shahrvand
+      - ./sandbox/mu-plugins:/var/www/html/wp-content/mu-plugins
+      - ./dist:/var/www/html/download:ro
+    healthcheck:
+      # Real HTTP probe: Apache + PHP + WordPress core all have to answer.
+      test:
+        - CMD-SHELL
+        - >-
+          code=$$(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1/wp-login.php || echo 000);
+          [ "$$code" = "200" ] || [ "$$code" = "302" ]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 60s
+
+  # One-shot: installs WordPress in Persian, activates the theme, creates the pages/menus
+  # and (when it can be downloaded) WooCommerce plus the demo catalogue.
+  seed:
+    image: wordpress:cli-php8.2
+    user: "33:33"
+    depends_on:
+      db:
+        condition: service_healthy
+      wordpress:
+        condition: service_healthy
+    environment:
+      - WORDPRESS_DB_HOST=db:3306
+      - WORDPRESS_DB_NAME=wordpress
+      - WORDPRESS_DB_USER=wordpress
+      - WORDPRESS_DB_PASSWORD=wordpress
+      - WORDPRESS_TABLE_PREFIX=wp_
+      - HOME=/tmp
+      - WP_URL=https://3000-${BASE44_PUBLIC_HOST_SUFFIX}
+      - BASE44_PREVIEW_MODE
+      - BASE44_PUBLIC_HOST_SUFFIX=${BASE44_PUBLIC_HOST_SUFFIX}
+    volumes:
+      - wp_data:/var/www/html
+      - ./theme/goosht-shahrvand:/var/www/html/wp-content/themes/goosht-shahrvand
+      - ./sandbox/mu-plugins:/var/www/html/wp-content/mu-plugins
+      - ./sandbox/seed:/seed:ro
+    command: ["sh", "-ec", "sh /seed/seed.sh"]
+
+volumes:
+  wp_data:
+  db_data:

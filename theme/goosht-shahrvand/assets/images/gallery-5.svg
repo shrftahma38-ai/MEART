@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img">
+<defs>
+<linearGradient id="bgg5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#171717"/><stop offset="0.55" stop-color="#101010"/><stop offset="1" stop-color="#0b0b0b"/></linearGradient>
+<radialGradient id="glowg5" cx="50%" cy="45%" r="62%"><stop offset="0" stop-color="#a01212" stop-opacity="0.42"/><stop offset="0.55" stop-color="#a01212" stop-opacity="0.10"/><stop offset="1" stop-color="#a01212" stop-opacity="0"/></radialGradient>
+<linearGradient id="meatg5" x1="0.1" y1="0" x2="0.9" y2="1"><stop offset="0" stop-color="#4a2323"/><stop offset="0.5" stop-color="#33191b"/><stop offset="1" stop-color="#231213"/></linearGradient>
+<pattern id="gridg5" width="34" height="34" patternUnits="userSpaceOnUse" patternTransform="rotate(28)"><line x1="0" y1="0" x2="0" y2="34" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1.4"/></pattern>
+<filter id="softg5" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="46"/></filter>
+<clipPath id="clipg5"><path d="M 216.0 368.0 C 216.0 180.79999999999998, 298.8 122.56, 400.0 149.6 C 514.08 170.4, 606.08 280.64, 593.2 405.44 C 584.0 538.56, 477.28 588.48, 359.52 567.6800000000001 C 249.12 546.88, 216.0 492.8, 216.0 368.0 Z"/></clipPath>
+</defs>
+<rect width="800" height="800" fill="url(#bgg5)"/>
+<rect width="800" height="800" fill="url(#gridg5)"/>
+<ellipse cx="400.0" cy="368.0" rx="349.59999999999997" ry="353.59999999999997" fill="#a01212" opacity="0.5" filter="url(#softg5)"/>
+<rect width="800" height="800" fill="url(#glowg5)"/>
+<path d="M 216.0 368.0 C 216.0 180.79999999999998, 298.8 122.56, 400.0 149.6 C 514.08 170.4, 606.08 280.64, 593.2 405.44 C 584.0 538.56, 477.28 588.48, 359.52 567.6800000000001 C 249.12 546.88, 216.0 492.8, 216.0 368.0 Z" fill="url(#meatg5)" stroke="#6d2b2b" stroke-width="3"/>
+<g clip-path="url(#clipg5)"><path d="M 225.20000000000002 280.64 C 344.8 234.88, 446.0 322.24, 574.8 268.15999999999997" fill="none" stroke="#e9d3cb" stroke-opacity="0.30" stroke-width="2.6" stroke-linecap="round"/><path d="M 225.20000000000002 343.04 C 344.8 297.28000000000003, 446.0 384.64000000000004, 574.8 330.56" fill="none" stroke="#e9d3cb" stroke-opacity="0.30" stroke-width="2.6" stroke-linecap="round"/><path d="M 225.20000000000002 409.6 C 344.8 363.84000000000003, 446.0 451.20000000000005, 574.8 397.12" fill="none" stroke="#e9d3cb" stroke-opacity="0.30" stroke-width="2.6" stroke-linecap="round"/><path d="M 225.20000000000002 472.0 C 344.8 426.24, 446.0 513.6, 574.8 459.52" fill="none" stroke="#e9d3cb" stroke-opacity="0.30" stroke-width="2.6" stroke-linecap="round"/></g>
+<rect x="64.0" y="664.0" width="56.00000000000001" height="3" fill="#a01212"/>
+<text x="400.0" y="720.0" text-anchor="middle" direction="rtl" font-family="Tahoma, 'Segoe UI', Arial, sans-serif" font-size="46" font-weight="bold" fill="#ffffff">کباب آماده</text>
+<text x="400.0" y="764.0" text-anchor="middle" direction="rtl" font-family="Tahoma, 'Segoe UI', Arial, sans-serif" font-size="25" letter-spacing="1" fill="#cccccc" fill-opacity="0.85">با ادویه مخصوص</text>
+</svg>

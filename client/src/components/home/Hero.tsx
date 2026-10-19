@@ -1,85 +1,83 @@
+import { useCallback, useRef } from 'react';
+import { usePrefersReducedMotion } from '../../hooks/useScrollScrub';
 import { EDITORIAL } from '../../lib/editorial';
-import { Icon } from '../ui/Icon';
+import { HeroCopy } from './HeroCopy';
+import { HeroVideo } from './HeroVideo';
+
+/** Where the copy starts leaving and where it has gone, as a share of the film. */
+const COPY_FADE_START = 0.05;
+const COPY_FADE_END = 0.27;
+/** How far the copy drifts up as it fades. */
+const COPY_DRIFT = 30;
+
+export function Hero() {
+  const reduced = usePrefersReducedMotion();
+  return reduced ? <StaticHero /> : <ScrubHero />;
+}
 
 /**
- * Full-bleed opening statement. The photograph settles from a slight over-scale
- * while the headline and copy fade up in sequence.
+ * The scroll-driven hero.
+ *
+ * The section is a runway three viewports tall; the frame inside it is pinned to the top of
+ * the screen for that whole distance, so scrolling scrubs the film instead of scrolling past
+ * it. Progress through the runway maps linearly onto the film's timeline — 0 → first frame,
+ * 1 → last frame — and the mapping holds in both directions, so scrolling back up runs the
+ * film backwards. Nothing here plays the video; see `useScrollScrub`.
  */
-export function Hero() {
+function ScrubHero() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const frameRef = useRef<HTMLDivElement>(null);
+  const copyRef = useRef<HTMLDivElement>(null);
+
+  // Runs once per animation frame and writes straight to the DOM — scroll progress must
+  // never pass through React state, or the whole tree would re-render on every frame.
+  const onFrame = useCallback((progress: number) => {
+    const node = copyRef.current;
+    if (!node) return;
+
+    const fade = Math.min(
+      1,
+      Math.max(0, (progress - COPY_FADE_START) / (COPY_FADE_END - COPY_FADE_START)),
+    );
+    node.style.opacity = String(1 - fade);
+    node.style.transform = `translate3d(0, ${(-COPY_DRIFT * fade).toFixed(2)}px, 0)`;
+    // Once it is mostly gone the copy must not swallow clicks meant for the film.
+    node.style.pointerEvents = fade > 0.4 ? 'none' : '';
+  }, []);
+
   return (
-    <section className="relative isolate flex min-h-[100svh] flex-col justify-center overflow-hidden bg-navy-950">
+    <section ref={sectionRef} className="relative isolate h-[300vh] bg-navy-950">
+      <div ref={frameRef} className="sticky top-0 h-[100svh] w-full overflow-hidden">
+        <HeroVideo sectionRef={sectionRef} frameRef={frameRef} onFrame={onFrame} />
+
+        {/* Just enough shading to keep the transparent header and the scroll cue legible. */}
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 bg-gradient-to-b from-navy-950/70 via-navy-950/5 to-navy-950/55"
+        />
+
+        <HeroCopy copyRef={copyRef} />
+      </div>
+    </section>
+  );
+}
+
+/** Reduced motion: the brand photograph, one viewport tall, with no film and no runway. */
+function StaticHero() {
+  return (
+    <section className="relative isolate min-h-[100svh] overflow-hidden bg-navy-950">
       <img
         src={EDITORIAL.hero}
         alt="A modern villa with full-height glazing and an infinity pool at twilight"
         loading="eager"
         decoding="async"
-        className="absolute inset-0 h-full w-full animate-hero-settle object-cover"
+        className="absolute inset-0 h-full w-full object-cover"
       />
       <div
         aria-hidden="true"
         className="absolute inset-0 bg-gradient-to-b from-navy-950/75 via-navy-950/35 to-navy-950/85"
       />
-
-      <div className="shell relative w-full pb-24 pt-32 sm:pb-28 lg:pb-32 lg:pt-40">
-        <div className="mx-auto max-w-4xl text-center">
-          <p
-            className="label animate-fade-up text-champagne"
-            style={{ animationDelay: '80ms' }}
-          >
-            Luxury Real Estate &middot; Est. 2004
-          </p>
-
-          <h1
-            className="mt-7 animate-fade-up font-display text-[2.35rem] font-medium leading-[1.08] tracking-[-0.015em] text-white sm:text-[3.25rem] lg:text-[4.25rem] xl:text-[4.75rem]"
-            style={{ animationDelay: '160ms' }}
-          >
-            Discover Exceptional
-            <br />
-            Homes &amp; Investments
-          </h1>
-
-          <p
-            className="measure mx-auto mt-7 animate-fade-up text-[1.0625rem] leading-[1.75] text-white/80 sm:text-lg"
-            style={{ animationDelay: '260ms' }}
-          >
-            Premium properties in prime locations. Find your dream home or the perfect investment
-            with confidence.
-          </p>
-
-          <div
-            className="mt-10 flex animate-fade-up flex-col items-center justify-center gap-4 sm:flex-row"
-            style={{ animationDelay: '340ms' }}
-          >
-            <a
-              href="#featured"
-              className="group/btn inline-flex h-[3.25rem] items-center justify-center gap-2.5 bg-champagne px-8 font-sans text-xs font-medium uppercase tracking-wide2 text-navy-900 transition-all duration-300 ease-editorial hover:bg-champagne-light"
-            >
-              View Properties
-              <Icon
-                name="arrow-right"
-                size={16}
-                className="transition-transform duration-300 group-hover/btn:translate-x-1"
-              />
-            </a>
-            <a
-              href="#contact"
-              className="inline-flex h-[3.25rem] items-center justify-center gap-2.5 border border-white/45 px-8 font-sans text-xs font-medium uppercase tracking-wide2 text-white transition-all duration-300 ease-editorial hover:border-white hover:bg-white hover:text-navy"
-            >
-              Book a Consultation
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div
-        aria-hidden="true"
-        className="absolute inset-x-0 bottom-8 hidden justify-center lg:flex"
-      >
-        <div className="flex flex-col items-center gap-3">
-          <span className="font-sans text-[0.625rem] uppercase tracking-label text-white/55">Scroll</span>
-          <span className="h-12 w-px bg-gradient-to-b from-white/60 to-transparent" />
-        </div>
-      </div>
+      <HeroCopy />
     </section>
   );
 }

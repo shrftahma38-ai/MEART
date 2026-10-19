@@ -38,6 +38,27 @@ the Base44 sandbox.
   native scrolling with CSS snap. A drag of more than 6px suppresses the following click so cards do
   not navigate by accident — keep that pair together if you touch `PropertyCarousel`.
 
+## The hero film
+
+The homepage hero is a scroll-scrubbed film, not a background video. `client/src/hooks/useScrollScrub.ts`
+owns it; the section is a `300vh` runway with a `100svh` sticky frame, so 200vh of scroll maps onto the
+film's whole timeline, in both directions. It is never played — no `play()`, no autoplay, no loop.
+
+- **Seeks are the whole game.** The film must keep a keyframe every ~6 frames (`-g 6` at 24fps, plus
+  `-sc_threshold 0`) and `+faststart`. The master supplied for this build had **one** keyframe across
+  9s, so any seek had to decode from frame one and scrubbing was unusable. Re-encode with the ffmpeg
+  line in `client/src/lib/editorial.ts` if the film is replaced.
+- **A seek drops `readyState` to 1 while it resolves.** Readiness has to be *latched* once (see `armed`
+  in the hook). Testing `readyState` live sends the timeline back to the first frame on every seek and
+  the film stalls there — that bug is easy to reintroduce.
+- `hero-scrub-mobile.mp4` is the phone encode, chosen **once on mount** by `matchMedia('(max-width: 767px)')`.
+  Swapping the source later would restart the download.
+- The copy fades out over the first ~27% of the runway; that is written straight to the DOM inside the
+  animation frame, so scroll progress never passes through React state.
+- `prefers-reduced-motion` skips the film entirely and renders the brand photograph instead.
+- Verifying it: scroll to a share of the runway, wait for the timeline to settle (a seek takes a few
+  hundred ms in the sandbox), then compare `video.currentTime` with `progress × video.duration`.
+
 ## Sandbox overrides (all gated on `BASE44_PREVIEW_MODE === "1"`)
 
 Nothing else in the app depends on the flag; with it unset (or any other value) the original

@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    /* Offset for the fixed header when jumping to a section anchor. */
+    scroll-padding-top: 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-white text-navy font-sans antialiased;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-navy;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Champagne focus ring for every keyboard interaction. */
+  :focus-visible {
+    outline: 2px solid theme('colors.champagne.DEFAULT');
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background: theme('colors.champagne.DEFAULT');
+    color: theme('colors.navy.900');
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Single horizontal rhythm shared by every section. */
+  .shell {
+    @apply mx-auto w-full max-w-shell px-5 sm:px-8 lg:px-10 xl:px-14;
+  }
+
+  .label {
+    @apply font-sans text-[0.6875rem] font-medium uppercase leading-none tracking-label sm:text-xs;
+  }
+
+  .hairline {
+    @apply border-navy/10;
+  }
+
+  .measure {
+    @apply max-w-[46ch];
+  }
+
+  .no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Skeleton shimmer used while the catalogue loads. */
+  .shimmer {
+    @apply relative overflow-hidden bg-navy-50;
+  }
+
+  .shimmer::after {
+    @apply absolute inset-0 animate-shimmer;
+    content: '';
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.7), transparent);
+  }
+}
+
+@layer utilities {
+  .reveal {
+    opacity: 0;
+    transform: translateY(22px);
+    transition:
+      opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+
+  .reveal-in {
+    opacity: 1;
+    transform: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}

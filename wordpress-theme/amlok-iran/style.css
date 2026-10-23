@@ -1,0 +1,152 @@
+/*
+Theme Name: املاک ایران
+Theme URI: https://amlok-iran.example
+Author: املاک ایران
+Description: قالب حرفه‌ای و واکنش‌گرای وب‌سایت املاک با تجربه ویدیویی اسکرول‌محور، فهرست آگهی‌های ملک، گالری تصاویر، فرم تماس و درخواست بازدید، و علاقه‌مندی‌های بازدیدکننده. کاملاً فارسی و راست‌چین.
+Version: 1.0.0
+Requires at least: 6.3
+Tested up to: 6.7
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: amlok-iran
+Tags: rtl-language-support, custom-menu, custom-logo, featured-images, custom-colors
+*/
+
+/*
+ * سربرگ قالب بالا آمده است. فونت فارسی وزیرمتن (مجوز OFL، فایل کنار فونت‌ها)
+ * و چند تنظیم پایه در همین فایل است؛ استایل اصلی طراحی در
+ * assets/css/theme.css بارگذاری می‌شود.
+ */
+
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('assets/fonts/Vazirmatn-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('assets/fonts/Vazirmatn-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('assets/fonts/Vazirmatn-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('assets/fonts/Vazirmatn-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light;
+}
+
+/* حروف فارسی فاصله‌گذاری لاتین نمی‌خواهد؛ تراکم حروف تنظیم‌شده در کلاس‌های
+ * کمکی را روی متن فارسی خنثی می‌کنیم. */
+[dir='rtl'] body,
+[dir='rtl'] input,
+[dir='rtl'] select,
+[dir='rtl'] textarea,
+[dir='rtl'] button {
+  letter-spacing: 0 !important;
+}
+
+/* نوار اسکرول باریک و هم‌سبک طراحی */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(197, 163, 88, 0.6) rgba(10, 25, 47, 0.08);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(197, 163, 88, 0.55);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(10, 25, 47, 0.06);
+}
+
+/* فیلد تاریخ در فرم بازدید (زمینه تیره) */
+input[type='date'] {
+  color-scheme: dark;
+}
+
+input[type='date'].amlok-input-light {
+  color-scheme: light;
+}
+
+/* صفحه‌بندی فهرست املاک */
+.page-numbers {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.75rem;
+  height: 2.75rem;
+  padding: 0 0.75rem;
+  border: 1px solid rgba(10, 25, 47, 0.2);
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  color: #0a192f;
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.page-numbers.current {
+  background: #0a192f;
+  border-color: #0a192f;
+  color: #fff;
+}
+
+a.page-numbers:hover {
+  background: #0a192f;
+  color: #fff;
+}
+
+.screen-reader-text {
+  border: 0;
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+.alignleft {
+  float: right;
+  margin: 0 0 1.5rem 1.5rem;
+}
+
+.alignright {
+  float: left;
+  margin: 0 1.5rem 1.5rem 0;
+}
+
+.aligncenter {
+  display: block;
+  margin-inline: auto;
+  margin-block: 1.5rem;
+}
+
+.wp-caption {
+  max-width: 100%;
+}

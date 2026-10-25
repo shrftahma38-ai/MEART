@@ -58,14 +58,6 @@ if ( $tax_query ) {
 }
 
 $meta_query = array();
-if ( 'featured' === $filters['sort'] ) {
-	// ویژه‌ها اول، بی‌آنکه املاک بدون تیک «ویژه» حذف شوند.
-	$meta_query[] = array(
-		'relation' => 'OR',
-		array( 'key' => '_ai_featured', 'compare' => 'EXISTS' ),
-		array( 'key' => '_ai_featured', 'compare' => 'NOT EXISTS' ),
-	);
-}
 $price_bucket = $price_buckets[ $filters['price'] ] ?? null;
 if ( $price_bucket && $filters['price'] !== '' ) {
 	$meta_query[] = array( 'key' => '_ai_price', 'type' => 'numeric', 'compare' => 'BETWEEN', 'value' => array( $price_bucket['min'], $price_bucket['max'] > 0 ? $price_bucket['max'] : 999999999999 ) );

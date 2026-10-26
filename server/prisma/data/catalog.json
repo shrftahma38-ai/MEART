@@ -1,0 +1,1218 @@
+{
+ "categories": [
+  {
+   "slug": "manto",
+   "name": "پارچه مانتویی",
+   "description": "پارچه‌های سبک و کشسان برای دوخت مانتو، شومیز و تونیک",
+   "image": "/media/categories/manto.jpg"
+  },
+  {
+   "slug": "kot-shalvar",
+   "name": "پارچه کت‌وشلواری",
+   "description": "پارچه‌های ساختاردار و ایستاده برای کت، شلوار و تیپ رسمی",
+   "image": "/media/categories/kot-shalvar.jpg"
+  },
+  {
+   "slug": "majlesi",
+   "name": "پارچه مجلسی",
+   "description": "پارچه‌های درخشان و لوکس برای لباس مجلسی و شب",
+   "image": "/media/categories/majlesi.jpg"
+  },
+  {
+   "slug": "nakhi",
+   "name": "پارچه نخی",
+   "description": "پارچه‌های طبیعی، خنک و راحت برای دوخت روزمره",
+   "image": "/media/categories/nakhi.jpg"
+  },
+  {
+   "slug": "jin",
+   "name": "پارچه جین",
+   "description": "جین ساده، کشی و سنگ‌شور برای دوخت شلوار و کت جین",
+   "image": "/media/categories/jin.jpg"
+  },
+  {
+   "slug": "parde",
+   "name": "پارچه پرده‌ای",
+   "description": "پارچه‌های آویش‌پذیر برای پرده، پوشش پنجره و اتاق‌پذیرایی",
+   "image": "/media/categories/parde.jpg"
+  },
+  {
+   "slug": "mobli",
+   "name": "پارچه مبلی",
+   "description": "پارچه‌های ضخیم و بادوام برای رویه مبل و صندلی",
+   "image": "/media/categories/mobli.jpg"
+  }
+ ],
+ "products": [
+  {
+   "slug": "manto-mazrati",
+   "name": "مازراتی",
+   "category": "manto",
+   "kind": "satin",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "مازراتی با سطحی صاف و کمی درخشان، انتخابی شیک برای مانتوهای مجلسی‌تر.",
+   "description": "پارچه مازراتی از خانواده پارچه‌های مانتویی با بافت ریز و سطح صاف است. ایستایی ملایم آن باعث می‌شود فرم مانتو در طول روز حفظ شود و چین‌خوردگی کمتری داشته باشد. برای مانتو، شومیز و تونیک مناسب است و در رنگ‌بندی متنوع عرضه می‌شود.",
+   "colors": [
+    {
+     "name": "سبز زیتونی",
+     "hex": "#4F5B3A",
+     "image": "/media/products/manto-mazrati-1.jpg"
+    },
+    {
+     "name": "شرابی",
+     "hex": "#6E2233",
+     "image": "/media/products/manto-mazrati-2.jpg"
+    },
+    {
+     "name": "مشکی",
+     "hex": "#1C1C1C",
+     "image": "/media/products/manto-mazrati-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/manto-mazrati-1.jpg",
+    "/media/products/manto-mazrati-2.jpg",
+    "/media/products/manto-mazrati-3.jpg",
+    "/media/products/manto-mazrati-detail.jpg"
+   ]
+  },
+  {
+   "slug": "manto-barbie",
+   "name": "باربی",
+   "category": "manto",
+   "kind": "satin",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "پارچه باربی با لطافت و درخشش ملایم، مناسب مانتو و شومیز.",
+   "description": "باربی پارچه‌ای سبک با سطحی نرم و درخشش ملایم است که به راحتی روی بدن می‌افتد. برای مانتوهای بهاره، شومیز و دامن‌های ساده انتخاب خوبی است. دوخت آن آسان است و نیاز به آستر سنگین ندارد.",
+   "colors": [
+    {
+     "name": "صورتی",
+     "hex": "#C98C9A",
+     "image": "/media/products/manto-barbie-1.jpg"
+    },
+    {
+     "name": "کرم",
+     "hex": "#E4D8C3",
+     "image": "/media/products/manto-barbie-2.jpg"
+    },
+    {
+     "name": "آبی نفتی",
+     "hex": "#3B5266",
+     "image": "/media/products/manto-barbie-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/manto-barbie-1.jpg",
+    "/media/products/manto-barbie-2.jpg",
+    "/media/products/manto-barbie-3.jpg",
+    "/media/products/manto-barbie-detail.jpg"
+   ]
+  },
+  {
+   "slug": "manto-crepe",
+   "name": "کرپ",
+   "category": "manto",
+   "kind": "plain",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "کرپ با بافت مات و ایستایی خوب، پایه ثابت مانتو و شلوار.",
+   "description": "کرپ پارچه‌ای مات با بافت ریز است که چین نمی‌خورد و دوام بالایی دارد. برای مانتو، شلوار و دامن مناسب است و به دلیل سطح یکدست، دوخت تمیزی ارائه می‌دهد.",
+   "colors": [
+    {
+     "name": "مشکی",
+     "hex": "#211F1E",
+     "image": "/media/products/manto-crepe-1.jpg"
+    },
+    {
+     "name": "سرمه‌ای",
+     "hex": "#243449",
+     "image": "/media/products/manto-crepe-2.jpg"
+    },
+    {
+     "name": "زرشکی",
+     "hex": "#5E2130",
+     "image": "/media/products/manto-crepe-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/manto-crepe-1.jpg",
+    "/media/products/manto-crepe-2.jpg",
+    "/media/products/manto-crepe-3.jpg",
+    "/media/products/manto-crepe-detail.jpg"
+   ]
+  },
+  {
+   "slug": "manto-eskachi",
+   "name": "اسکاچی",
+   "category": "manto",
+   "kind": "tweed",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "اسکاچی با سطح بافت‌دار و ظاهر گرم، مناسب مانتو و کت سبک.",
+   "description": "اسکاچی بافت درشتی دارد که ظاهری گرم و خاص به لباس می‌دهد. برای مانتوهای پاییزه، کت‌های سبک و جلیقه مناسب است. در رنگ‌های خنثی عرضه می‌شود و با رنگ‌های روشن ترکیب زیبایی می‌سازد.",
+   "colors": [
+    {
+     "name": "خاکی",
+     "hex": "#8A7A5C",
+     "image": "/media/products/manto-eskachi-1.jpg"
+    },
+    {
+     "name": "طوسی",
+     "hex": "#7C7C7C",
+     "image": "/media/products/manto-eskachi-2.jpg"
+    },
+    {
+     "name": "قهوه‌ای",
+     "hex": "#6A4A34",
+     "image": "/media/products/manto-eskachi-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/manto-eskachi-1.jpg",
+    "/media/products/manto-eskachi-2.jpg",
+    "/media/products/manto-eskachi-3.jpg",
+    "/media/products/manto-eskachi-detail.jpg"
+   ]
+  },
+  {
+   "slug": "manto-fiona",
+   "name": "فیونا",
+   "category": "manto",
+   "kind": "plain",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "فیونا پارچه‌ای سبک و خوش‌افت با رنگ‌بندی ملایم.",
+   "description": "فیونا از پارچه‌های پرطرفدار مانتویی است که سبکی و خوش‌افت بودن را با هم دارد. برای مانتوهای تابستانه، شومیز و تونیک مناسب است و رنگ‌های ملایم آن برای استفاده روزمره جذاب است.",
+   "colors": [
+    {
+     "name": "بژ",
+     "hex": "#D8C7AC",
+     "image": "/media/products/manto-fiona-1.jpg"
+    },
+    {
+     "name": "صورتی",
+     "hex": "#D9A8AE",
+     "image": "/media/products/manto-fiona-2.jpg"
+    },
+    {
+     "name": "آبی",
+     "hex": "#7C93A8",
+     "image": "/media/products/manto-fiona-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/manto-fiona-1.jpg",
+    "/media/products/manto-fiona-2.jpg",
+    "/media/products/manto-fiona-3.jpg",
+    "/media/products/manto-fiona-detail.jpg"
+   ]
+  },
+  {
+   "slug": "manto-prada",
+   "name": "پرادا",
+   "category": "manto",
+   "kind": "satin",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "پرادا با سنگینی مطلوب و درخشش کنترل‌شده، مناسب مانتو مجلسی.",
+   "description": "پرادا پارچه‌ای با وزن متوسط و سطح درخشان است که فرم مانتو را به خوبی نگه می‌دارد. برای مانتوهای مجلسی و مدل‌های دوخته‌شده با جزئیات مناسب است.",
+   "colors": [
+    {
+     "name": "مشکی",
+     "hex": "#191919",
+     "image": "/media/products/manto-prada-1.jpg"
+    },
+    {
+     "name": "سبز",
+     "hex": "#2E4A3C",
+     "image": "/media/products/manto-prada-2.jpg"
+    },
+    {
+     "name": "شرابی",
+     "hex": "#6B2C36",
+     "image": "/media/products/manto-prada-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/manto-prada-1.jpg",
+    "/media/products/manto-prada-2.jpg",
+    "/media/products/manto-prada-3.jpg",
+    "/media/products/manto-prada-detail.jpg"
+   ]
+  },
+  {
+   "slug": "manto-shantoon",
+   "name": "شانتون",
+   "category": "manto",
+   "kind": "jacquard",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "شانتون با نقش‌های برجسته و بافت مخملی، لوکس و خاص.",
+   "description": "شانتون بافت برجسته‌ای دارد که نقش‌ها روی سطح پارچه حس می‌شوند. برای مانتوهای خاص، کت‌های مجلسی و دامن مناسب است. نور را به نرمی بازمی‌تاباند و ظاهری گران‌قیمت می‌سازد.",
+   "colors": [
+    {
+     "name": "کرم",
+     "hex": "#DCCDB2",
+     "image": "/media/products/manto-shantoon-1.jpg"
+    },
+    {
+     "name": "طلایی",
+     "hex": "#B79A5C",
+     "image": "/media/products/manto-shantoon-2.jpg"
+    },
+    {
+     "name": "سبز",
+     "hex": "#3D5142",
+     "image": "/media/products/manto-shantoon-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/manto-shantoon-1.jpg",
+    "/media/products/manto-shantoon-2.jpg",
+    "/media/products/manto-shantoon-3.jpg",
+    "/media/products/manto-shantoon-detail.jpg"
+   ]
+  },
+  {
+   "slug": "manto-linen",
+   "name": "لینن",
+   "category": "manto",
+   "kind": "plain",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "لینن با بافت طبیعی و تنفس‌پذیری بالا، مناسب فصل گرم.",
+   "description": "لینن از الیاف طبیعی تولید می‌شود و هوا را به خوبی عبور می‌دهد. بافت طبیعی آن بخشی از زیبایی پارچه است. برای مانتو، شومیز و شلوارهای راحت مناسب است.",
+   "colors": [
+    {
+     "name": "کتان روشن",
+     "hex": "#D9CBAF",
+     "image": "/media/products/manto-linen-1.jpg"
+    },
+    {
+     "name": "خاکی",
+     "hex": "#A89677",
+     "image": "/media/products/manto-linen-2.jpg"
+    },
+    {
+     "name": "آبی",
+     "hex": "#6E8397",
+     "image": "/media/products/manto-linen-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/manto-linen-1.jpg",
+    "/media/products/manto-linen-2.jpg",
+    "/media/products/manto-linen-3.jpg",
+    "/media/products/manto-linen-detail.jpg"
+   ]
+  },
+  {
+   "slug": "kot-fastoony",
+   "name": "فاستونی",
+   "category": "kot-shalvar",
+   "kind": "twill",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "فاستونی با ساختار ایستاده، انتخاب اصلی کت و شلوار رسمی.",
+   "description": "فاستونی پارچه‌ای با وزن مناسب و سطح صاف است که برای دوخت کت و شلوار رسمی استفاده می‌شود. ایستایی بالای آن باعث می‌شود یقه و سرشانه فرم خود را حفظ کنند.",
+   "colors": [
+    {
+     "name": "سرمه‌ای",
+     "hex": "#26313F",
+     "image": "/media/products/kot-fastoony-1.jpg"
+    },
+    {
+     "name": "طوسی",
+     "hex": "#6F7378",
+     "image": "/media/products/kot-fastoony-2.jpg"
+    },
+    {
+     "name": "قهوه‌ای",
+     "hex": "#5D4534",
+     "image": "/media/products/kot-fastoony-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/kot-fastoony-1.jpg",
+    "/media/products/kot-fastoony-2.jpg",
+    "/media/products/kot-fastoony-3.jpg",
+    "/media/products/kot-fastoony-detail.jpg"
+   ]
+  },
+  {
+   "slug": "kot-diplomat",
+   "name": "دیپلمات",
+   "category": "kot-shalvar",
+   "kind": "twill",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "دیپلمات پارچه‌ای رسمی با بافت ریز و ظاهر مرتب.",
+   "description": "دیپلمات از پارچه‌های رسمی و کم‌چین است که در دوخت کت، شلوار و جلیقه کاربرد دارد. سطح یکدست آن ظاهری جمع‌وجور به لباس می‌دهد و در برابر چین‌خوردگی مقاوم است.",
+   "colors": [
+    {
+     "name": "مشکی",
+     "hex": "#1B1B1B",
+     "image": "/media/products/kot-diplomat-1.jpg"
+    },
+    {
+     "name": "سرمه‌ای",
+     "hex": "#232D3B",
+     "image": "/media/products/kot-diplomat-2.jpg"
+    },
+    {
+     "name": "زغالی",
+     "hex": "#4A4A4C",
+     "image": "/media/products/kot-diplomat-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/kot-diplomat-1.jpg",
+    "/media/products/kot-diplomat-2.jpg",
+    "/media/products/kot-diplomat-3.jpg",
+    "/media/products/kot-diplomat-detail.jpg"
+   ]
+  },
+  {
+   "slug": "kot-gabardine",
+   "name": "گاباردین",
+   "category": "kot-shalvar",
+   "kind": "twill",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "گاباردین با بافت اریب و دوام بالا، مناسب شلوار و کت.",
+   "description": "گاباردین بافت اریبی دارد که به پارچه استحکام می‌دهد. برای شلوار، کت و پالتو مناسب است و به مرور زمان فرم خود را از دست نمی‌دهد.",
+   "colors": [
+    {
+     "name": "بژ",
+     "hex": "#C6B69A",
+     "image": "/media/products/kot-gabardine-1.jpg"
+    },
+    {
+     "name": "سبز زیتونی",
+     "hex": "#5A6348",
+     "image": "/media/products/kot-gabardine-2.jpg"
+    },
+    {
+     "name": "سرمه‌ای",
+     "hex": "#2A3547",
+     "image": "/media/products/kot-gabardine-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/kot-gabardine-1.jpg",
+    "/media/products/kot-gabardine-2.jpg",
+    "/media/products/kot-gabardine-3.jpg",
+    "/media/products/kot-gabardine-detail.jpg"
+   ]
+  },
+  {
+   "slug": "kot-kejrah",
+   "name": "کج‌راه",
+   "category": "kot-shalvar",
+   "kind": "pinstripe",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "کج‌راه با خطوط ظریف، ظاهری کلاسیک و کشیده.",
+   "description": "کج‌راه پارچه‌ای است با خطوط نازک و منظم که به قد لباس حالت کشیده می‌دهد. برای کت و شلوار رسمی و شلوارهای کلاسیک انتخاب محبوبی است.",
+   "colors": [
+    {
+     "name": "سرمه‌ای راه‌راه",
+     "hex": "#26313F",
+     "image": "/media/products/kot-kejrah-1.jpg"
+    },
+    {
+     "name": "مشکی راه‌راه",
+     "hex": "#1D1D1D",
+     "image": "/media/products/kot-kejrah-2.jpg"
+    },
+    {
+     "name": "طوسی راه‌راه",
+     "hex": "#6B6E73",
+     "image": "/media/products/kot-kejrah-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/kot-kejrah-1.jpg",
+    "/media/products/kot-kejrah-2.jpg",
+    "/media/products/kot-kejrah-3.jpg",
+    "/media/products/kot-kejrah-detail.jpg"
+   ]
+  },
+  {
+   "slug": "majlesi-satin",
+   "name": "ساتن",
+   "category": "majlesi",
+   "kind": "satin",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "ساتن ابریشم‌گونه با درخشش نرم، انتخاب اول لباس مجلسی.",
+   "description": "ساتن با سطحی صاف و درخشش نرم، نور را به زیبایی بازمی‌تاباند. برای لباس مجلسی، دامن و بالاتنه مناسب است. به دلیل لطافت، دوخت آن نیاز به دقت و سوزن نازک دارد.",
+   "colors": [
+    {
+     "name": "طلایی",
+     "hex": "#C2A15B",
+     "image": "/media/products/majlesi-satin-1.jpg"
+    },
+    {
+     "name": "زرشکی",
+     "hex": "#681F31",
+     "image": "/media/products/majlesi-satin-2.jpg"
+    },
+    {
+     "name": "سبز یشمی",
+     "hex": "#26564A",
+     "image": "/media/products/majlesi-satin-3.jpg"
+    },
+    {
+     "name": "سرمه‌ای",
+     "hex": "#243A5E",
+     "image": "/media/products/majlesi-satin-4.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/majlesi-satin-1.jpg",
+    "/media/products/majlesi-satin-2.jpg",
+    "/media/products/majlesi-satin-3.jpg",
+    "/media/products/majlesi-satin-4.jpg",
+    "/media/products/majlesi-satin-detail.jpg"
+   ]
+  },
+  {
+   "slug": "majlesi-harir",
+   "name": "حریر",
+   "category": "majlesi",
+   "kind": "sheer",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "حریر لطیف و سبک با افتی نرم، مناسب لباس‌های لایه‌ای.",
+   "description": "حریر پارچه‌ای نازک و سبک است که روی بدن می‌افتد. برای آستین، لایه رویی و لباس‌های مجلسی لایه‌ای استفاده می‌شود. در ترکیب با آستر، جلوه‌ای لطیف و شاعرانه می‌سازد.",
+   "colors": [
+    {
+     "name": "صورتی",
+     "hex": "#D9A9B4",
+     "image": "/media/products/majlesi-harir-1.jpg"
+    },
+    {
+     "name": "کرم",
+     "hex": "#E7DCC6",
+     "image": "/media/products/majlesi-harir-2.jpg"
+    },
+    {
+     "name": "آبی",
+     "hex": "#8AA5BA",
+     "image": "/media/products/majlesi-harir-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/majlesi-harir-1.jpg",
+    "/media/products/majlesi-harir-2.jpg",
+    "/media/products/majlesi-harir-3.jpg",
+    "/media/products/majlesi-harir-detail.jpg"
+   ]
+  },
+  {
+   "slug": "majlesi-gipoor",
+   "name": "گیپور",
+   "category": "majlesi",
+   "kind": "lace",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "گیپور با نقش‌های توری برجسته، مناسب لباس مجلسی.",
+   "description": "گیپور پارچه‌ای توری با نقش‌های برجسته است که برای لباس مجلسی، آستین و جزئیات تزئینی استفاده می‌شود. نقش‌های آن روی سطح کاملاً محسوس است و ظاهری دست‌دوز به لباس می‌دهد.",
+   "colors": [
+    {
+     "name": "کرم",
+     "hex": "#E3D6BE",
+     "image": "/media/products/majlesi-gipoor-1.jpg"
+    },
+    {
+     "name": "مشکی",
+     "hex": "#1E1E1E",
+     "image": "/media/products/majlesi-gipoor-2.jpg"
+    },
+    {
+     "name": "صورتی",
+     "hex": "#CFA3AC",
+     "image": "/media/products/majlesi-gipoor-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/majlesi-gipoor-1.jpg",
+    "/media/products/majlesi-gipoor-2.jpg",
+    "/media/products/majlesi-gipoor-3.jpg",
+    "/media/products/majlesi-gipoor-detail.jpg"
+   ]
+  },
+  {
+   "slug": "majlesi-dantel",
+   "name": "دانتل",
+   "category": "majlesi",
+   "kind": "lace",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "دانتل با تور ظریف و نقش‌های ریز، لطیف و زنانه.",
+   "description": "دانتل توری ظریف با نقش‌های ریز است که برای لباس عروس، لباس مجلسی و تزئین لبه‌ها به کار می‌رود. ترکیب آن با ساتن یا حریر نتیجه‌ای بسیار شیک دارد.",
+   "colors": [
+    {
+     "name": "سفید",
+     "hex": "#F1EBDF",
+     "image": "/media/products/majlesi-dantel-1.jpg"
+    },
+    {
+     "name": "کرم",
+     "hex": "#DFD2B9",
+     "image": "/media/products/majlesi-dantel-2.jpg"
+    },
+    {
+     "name": "شرابی",
+     "hex": "#6C2436",
+     "image": "/media/products/majlesi-dantel-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/majlesi-dantel-1.jpg",
+    "/media/products/majlesi-dantel-2.jpg",
+    "/media/products/majlesi-dantel-3.jpg",
+    "/media/products/majlesi-dantel-detail.jpg"
+   ]
+  },
+  {
+   "slug": "majlesi-jacquard",
+   "name": "ژاکارد",
+   "category": "majlesi",
+   "kind": "jacquard",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "ژاکارد با نقش‌های بافته‌شده و درخشش ملایم.",
+   "description": "ژاکارد پارچه‌ای است که نقش‌های آن در بافت پارچه شکل می‌گیرد، نه روی سطح. برای لباس مجلسی، کت و دامن مناسب است و ظاهری غنی و کلاسیک دارد.",
+   "colors": [
+    {
+     "name": "طلایی",
+     "hex": "#B99B5F",
+     "image": "/media/products/majlesi-jacquard-1.jpg"
+    },
+    {
+     "name": "سرمه‌ای",
+     "hex": "#28344C",
+     "image": "/media/products/majlesi-jacquard-2.jpg"
+    },
+    {
+     "name": "زرشکی",
+     "hex": "#64202F",
+     "image": "/media/products/majlesi-jacquard-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/majlesi-jacquard-1.jpg",
+    "/media/products/majlesi-jacquard-2.jpg",
+    "/media/products/majlesi-jacquard-3.jpg",
+    "/media/products/majlesi-jacquard-detail.jpg"
+   ]
+  },
+  {
+   "slug": "majlesi-lame",
+   "name": "لمه",
+   "category": "majlesi",
+   "kind": "satin",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "لمه با درخشش فلزی، مناسب لباس شب و مجلسی.",
+   "description": "لمه پارچه‌ای درخشان با جلوه فلزی است که برای لباس شب، دامن و جزئیات تزئینی استفاده می‌شود. زیر نور، بازتاب چشمگیری دارد و برای مجالس شب انتخاب می‌شود.",
+   "colors": [
+    {
+     "name": "طلایی",
+     "hex": "#C9A44C",
+     "image": "/media/products/majlesi-lame-1.jpg"
+    },
+    {
+     "name": "نقره‌ای",
+     "hex": "#B9BEC4",
+     "image": "/media/products/majlesi-lame-2.jpg"
+    },
+    {
+     "name": "رزگلد",
+     "hex": "#C08A76",
+     "image": "/media/products/majlesi-lame-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/majlesi-lame-1.jpg",
+    "/media/products/majlesi-lame-2.jpg",
+    "/media/products/majlesi-lame-3.jpg",
+    "/media/products/majlesi-lame-detail.jpg"
+   ]
+  },
+  {
+   "slug": "majlesi-polki",
+   "name": "پولکی",
+   "category": "majlesi",
+   "kind": "sequin",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "پولکی با پولک‌های ریز و درخشش چشمگیر.",
+   "description": "پولکی پارچه‌ای پوشیده از پولک‌های ریز است که در برابر نور می‌درخشد. برای لباس مجلسی، تاپ و دامن مناسب است. دوخت آن نیازمند دقت است تا پولک‌ها آسیب نبینند.",
+   "colors": [
+    {
+     "name": "نقره‌ای",
+     "hex": "#A9AEB5",
+     "image": "/media/products/majlesi-polki-1.jpg"
+    },
+    {
+     "name": "طلایی",
+     "hex": "#BFA057",
+     "image": "/media/products/majlesi-polki-2.jpg"
+    },
+    {
+     "name": "مشکی",
+     "hex": "#232323",
+     "image": "/media/products/majlesi-polki-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/majlesi-polki-1.jpg",
+    "/media/products/majlesi-polki-2.jpg",
+    "/media/products/majlesi-polki-3.jpg",
+    "/media/products/majlesi-polki-detail.jpg"
+   ]
+  },
+  {
+   "slug": "nakhi-katan",
+   "name": "کتان",
+   "category": "nakhi",
+   "kind": "plain",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "کتان طبیعی با بافت خنک و تنفس‌پذیر.",
+   "description": "کتان از الیاف طبیعی کتان تولید می‌شود و برای فصل گرم انتخاب ایده‌آلی است. بافت طبیعی و کمی ناهموار آن بخشی از جذابیت پارچه است. برای پیراهن، شلوار و مانتو مناسب است.",
+   "colors": [
+    {
+     "name": "کرم",
+     "hex": "#E0D3B8",
+     "image": "/media/products/nakhi-katan-1.jpg"
+    },
+    {
+     "name": "آبی روشن",
+     "hex": "#9FB6C6",
+     "image": "/media/products/nakhi-katan-2.jpg"
+    },
+    {
+     "name": "خاکی",
+     "hex": "#A7977B",
+     "image": "/media/products/nakhi-katan-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/nakhi-katan-1.jpg",
+    "/media/products/nakhi-katan-2.jpg",
+    "/media/products/nakhi-katan-3.jpg",
+    "/media/products/nakhi-katan-detail.jpg"
+   ]
+  },
+  {
+   "slug": "nakhi-tetron",
+   "name": "تترون",
+   "category": "nakhi",
+   "kind": "plain",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "تترون مقاوم و کم‌چین، مناسب دوخت روزمره.",
+   "description": "تترون ترکیبی از پنبه و الیاف مصنوعی است که دوام و کم‌چین بودن را با هم دارد. برای پیراهن، شومیز و لباس کودک مناسب است و نگهداری آسانی دارد.",
+   "colors": [
+    {
+     "name": "سفید",
+     "hex": "#F2EEE4",
+     "image": "/media/products/nakhi-tetron-1.jpg"
+    },
+    {
+     "name": "آبی",
+     "hex": "#8FA8C0",
+     "image": "/media/products/nakhi-tetron-2.jpg"
+    },
+    {
+     "name": "صورتی",
+     "hex": "#D9B3B6",
+     "image": "/media/products/nakhi-tetron-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/nakhi-tetron-1.jpg",
+    "/media/products/nakhi-tetron-2.jpg",
+    "/media/products/nakhi-tetron-3.jpg",
+    "/media/products/nakhi-tetron-detail.jpg"
+   ]
+  },
+  {
+   "slug": "nakhi-chit",
+   "name": "چیت",
+   "category": "nakhi",
+   "kind": "print",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "چیت گلدار با طرح‌های ریز و رنگ‌های شاد.",
+   "description": "چیت پارچه‌ای نخی با طرح‌های چاپی ریز است که برای لباس‌های روزمره، پیراهن و لباس کودک استفاده می‌شود. سبک و خنک است و رنگ‌های شاد آن حس تازگی می‌دهد.",
+   "colors": [
+    {
+     "name": "گلدار صورتی",
+     "hex": "#DCB3B8",
+     "image": "/media/products/nakhi-chit-1.jpg"
+    },
+    {
+     "name": "گلدار آبی",
+     "hex": "#A9BFCC",
+     "image": "/media/products/nakhi-chit-2.jpg"
+    },
+    {
+     "name": "گلدار سبز",
+     "hex": "#B9C3A1",
+     "image": "/media/products/nakhi-chit-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/nakhi-chit-1.jpg",
+    "/media/products/nakhi-chit-2.jpg",
+    "/media/products/nakhi-chit-3.jpg",
+    "/media/products/nakhi-chit-detail.jpg"
+   ]
+  },
+  {
+   "slug": "nakhi-motaghal",
+   "name": "متقال",
+   "category": "nakhi",
+   "kind": "plain",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "متقال با بافت محکم، مناسب کاربردهای مقاوم.",
+   "description": "متقال پارچه‌ای نخی با بافت محکم و سطح یکدست است. برای کیف، لباس کار، رومیزی و دوخت‌های مقاوم استفاده می‌شود و دوام بالایی دارد.",
+   "colors": [
+    {
+     "name": "کرم",
+     "hex": "#DED2B9",
+     "image": "/media/products/nakhi-motaghal-1.jpg"
+    },
+    {
+     "name": "خاکی",
+     "hex": "#A99A7C",
+     "image": "/media/products/nakhi-motaghal-2.jpg"
+    },
+    {
+     "name": "طوسی",
+     "hex": "#9A9A96",
+     "image": "/media/products/nakhi-motaghal-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/nakhi-motaghal-1.jpg",
+    "/media/products/nakhi-motaghal-2.jpg",
+    "/media/products/nakhi-motaghal-3.jpg",
+    "/media/products/nakhi-motaghal-detail.jpg"
+   ]
+  },
+  {
+   "slug": "nakhi-molmal",
+   "name": "ململ",
+   "category": "nakhi",
+   "kind": "plain",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "ململ سبک و لطیف با بافت باز و خنک.",
+   "description": "ململ پارچه‌ای نخی و سبک با بافت باز است که برای لباس‌های تابستانی، قنداق و لباس کودک مناسب است. لطافت آن برای پوست حساس مطلوب است.",
+   "colors": [
+    {
+     "name": "سفید",
+     "hex": "#F4F0E6",
+     "image": "/media/products/nakhi-molmal-1.jpg"
+    },
+    {
+     "name": "کرم",
+     "hex": "#E6DCC6",
+     "image": "/media/products/nakhi-molmal-2.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/nakhi-molmal-1.jpg",
+    "/media/products/nakhi-molmal-2.jpg",
+    "/media/products/nakhi-molmal-detail.jpg"
+   ]
+  },
+  {
+   "slug": "nakhi-val",
+   "name": "وال",
+   "category": "nakhi",
+   "kind": "sheer",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "وال نازک و خوش‌افت، مناسب شومیز و لباس تابستانه.",
+   "description": "وال پارچه‌ای نخی و نازک با افتی نرم است. برای شومیز، بلوز و لباس‌های تابستانه استفاده می‌شود و در لایه‌های روی هم جلوه‌ای سبک می‌سازد.",
+   "colors": [
+    {
+     "name": "صورتی روشن",
+     "hex": "#E7C9CC",
+     "image": "/media/products/nakhi-val-1.jpg"
+    },
+    {
+     "name": "آبی روشن",
+     "hex": "#BCD0DC",
+     "image": "/media/products/nakhi-val-2.jpg"
+    },
+    {
+     "name": "سفید",
+     "hex": "#F5F2EA",
+     "image": "/media/products/nakhi-val-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/nakhi-val-1.jpg",
+    "/media/products/nakhi-val-2.jpg",
+    "/media/products/nakhi-val-3.jpg",
+    "/media/products/nakhi-val-detail.jpg"
+   ]
+  },
+  {
+   "slug": "jin-sade",
+   "name": "جین ساده",
+   "category": "jin",
+   "kind": "twill",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "جین ساده با بافت اریب و دوام بالا.",
+   "description": "جین ساده پارچه‌ای ضخیم با بافت اریب است که برای شلوار، کت و کیف استفاده می‌شود. مقاومت بالای آن باعث شده سال‌ها انتخاب اصلی لباس‌های روزمره باشد.",
+   "colors": [
+    {
+     "name": "آبی",
+     "hex": "#33517A",
+     "image": "/media/products/jin-sade-1.jpg"
+    },
+    {
+     "name": "مشکی",
+     "hex": "#26272B",
+     "image": "/media/products/jin-sade-2.jpg"
+    },
+    {
+     "name": "خاکی",
+     "hex": "#8A7C63",
+     "image": "/media/products/jin-sade-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/jin-sade-1.jpg",
+    "/media/products/jin-sade-2.jpg",
+    "/media/products/jin-sade-3.jpg",
+    "/media/products/jin-sade-detail.jpg"
+   ]
+  },
+  {
+   "slug": "jin-keshi",
+   "name": "جین کشی",
+   "category": "jin",
+   "kind": "twill",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "جین کشی با کشسانی ملایم، راحت و خوش‌فرم.",
+   "description": "جین کشی با درصدی الیاف کشسان تولید می‌شود و راحتی بیشتری در حرکت ایجاد می‌کند. برای شلوارهای جذب و مانتوهای جین مناسب است و فرم خود را حفظ می‌کند.",
+   "colors": [
+    {
+     "name": "آبی تیره",
+     "hex": "#2C4468",
+     "image": "/media/products/jin-keshi-1.jpg"
+    },
+    {
+     "name": "مشکی",
+     "hex": "#222327",
+     "image": "/media/products/jin-keshi-2.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/jin-keshi-1.jpg",
+    "/media/products/jin-keshi-2.jpg",
+    "/media/products/jin-keshi-detail.jpg"
+   ]
+  },
+  {
+   "slug": "jin-sangshoor",
+   "name": "جین سنگ‌شور",
+   "category": "jin",
+   "kind": "twill",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "جین سنگ‌شور با رنگ‌رفتگی طبیعی و ظاهر کهنه.",
+   "description": "جین سنگ‌شور با فرآیند شست‌وشوی ویژه رنگ ملایم‌تری پیدا می‌کند. ظاهر آن کمی کهنه و طبیعی است و برای شلوار، کت و لباس‌های اسپرت مناسب است.",
+   "colors": [
+    {
+     "name": "آبی روشن",
+     "hex": "#7A99B8",
+     "image": "/media/products/jin-sangshoor-1.jpg"
+    },
+    {
+     "name": "آبی متوسط",
+     "hex": "#4F7196",
+     "image": "/media/products/jin-sangshoor-2.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/jin-sangshoor-1.jpg",
+    "/media/products/jin-sangshoor-2.jpg",
+    "/media/products/jin-sangshoor-detail.jpg"
+   ]
+  },
+  {
+   "slug": "parde-harir",
+   "name": "حریر",
+   "category": "parde",
+   "kind": "sheer",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "حریر پرده‌ای با افت زیبا و عبور نرم نور.",
+   "description": "حریر پرده‌ای پارچه‌ای سبک و آویش‌پذیر است که نور را به نرمی عبور می‌دهد. برای لایه رویی پرده و ترکیب با پرده ضخیم‌تر استفاده می‌شود و فضایی لطیف می‌سازد.",
+   "colors": [
+    {
+     "name": "کرم",
+     "hex": "#E9E0CC",
+     "image": "/media/products/parde-harir-1.jpg"
+    },
+    {
+     "name": "طلایی",
+     "hex": "#CBB27A",
+     "image": "/media/products/parde-harir-2.jpg"
+    },
+    {
+     "name": "خاکستری",
+     "hex": "#B7B6B1",
+     "image": "/media/products/parde-harir-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/parde-harir-1.jpg",
+    "/media/products/parde-harir-2.jpg",
+    "/media/products/parde-harir-3.jpg",
+    "/media/products/parde-harir-detail.jpg"
+   ]
+  },
+  {
+   "slug": "parde-hazan",
+   "name": "هازان",
+   "category": "parde",
+   "kind": "jacquard",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "هازان با نقش‌های بافته‌شده، مناسب پرده اتاق پذیرایی.",
+   "description": "هازان پارچه‌ای پرده‌ای با نقش‌های بافته‌شده و وزن مناسب است. آویش زیبایی دارد و در اتاق پذیرایی فضایی گرم و رسمی ایجاد می‌کند.",
+   "colors": [
+    {
+     "name": "کرم طلایی",
+     "hex": "#D6C4A2",
+     "image": "/media/products/parde-hazan-1.jpg"
+    },
+    {
+     "name": "سبز",
+     "hex": "#4A5B47",
+     "image": "/media/products/parde-hazan-2.jpg"
+    },
+    {
+     "name": "شرابی",
+     "hex": "#61313A",
+     "image": "/media/products/parde-hazan-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/parde-hazan-1.jpg",
+    "/media/products/parde-hazan-2.jpg",
+    "/media/products/parde-hazan-3.jpg",
+    "/media/products/parde-hazan-detail.jpg"
+   ]
+  },
+  {
+   "slug": "parde-makhmali",
+   "name": "مخمل",
+   "category": "parde",
+   "kind": "pile",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "مخمل با پرزهای نرم و عمق رنگ چشمگیر.",
+   "description": "مخمل پارچه‌ای با سطح پرزدار است که نور را جذب می‌کند و رنگی عمیق به فضا می‌دهد. برای پرده، رویه مبل و کوسن استفاده می‌شود و حس گرمی و لوکس ایجاد می‌کند.",
+   "colors": [
+    {
+     "name": "سبز",
+     "hex": "#33493C",
+     "image": "/media/products/parde-makhmali-1.jpg"
+    },
+    {
+     "name": "زرشکی",
+     "hex": "#5C2433",
+     "image": "/media/products/parde-makhmali-2.jpg"
+    },
+    {
+     "name": "سرمه‌ای",
+     "hex": "#26354C",
+     "image": "/media/products/parde-makhmali-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/parde-makhmali-1.jpg",
+    "/media/products/parde-makhmali-2.jpg",
+    "/media/products/parde-makhmali-3.jpg",
+    "/media/products/parde-makhmali-detail.jpg"
+   ]
+  },
+  {
+   "slug": "parde-jacquard",
+   "name": "ژاکارد",
+   "category": "parde",
+   "kind": "jacquard",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "ژاکارد پرده‌ای با نقش‌های درشت و جلوه رسمی.",
+   "description": "ژاکارد پرده‌ای با نقش‌های درشت و بافت سنگین، برای پرده‌های اتاق پذیرایی و فضاهای رسمی مناسب است. نور را محدود می‌کند و فضایی باشکوه می‌سازد.",
+   "colors": [
+    {
+     "name": "طلایی",
+     "hex": "#C4A768",
+     "image": "/media/products/parde-jacquard-1.jpg"
+    },
+    {
+     "name": "کرم",
+     "hex": "#DCCFB4",
+     "image": "/media/products/parde-jacquard-2.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/parde-jacquard-1.jpg",
+    "/media/products/parde-jacquard-2.jpg",
+    "/media/products/parde-jacquard-detail.jpg"
+   ]
+  },
+  {
+   "slug": "parde-blackout",
+   "name": "بلک‌اوت",
+   "category": "parde",
+   "kind": "plain",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "بلک‌اوت با مسدودسازی نور، مناسب اتاق خواب.",
+   "description": "بلک‌اوت پارچه‌ای ضخیم است که نور را به خوبی مسدود می‌کند و برای اتاق خواب و اتاق کودک مناسب است. عایق صدا و حرارت نیز هست و خواب آرام‌تری فراهم می‌کند.",
+   "colors": [
+    {
+     "name": "طوسی",
+     "hex": "#77736D",
+     "image": "/media/products/parde-blackout-1.jpg"
+    },
+    {
+     "name": "کرم",
+     "hex": "#D4C9B4",
+     "image": "/media/products/parde-blackout-2.jpg"
+    },
+    {
+     "name": "قهوه‌ای",
+     "hex": "#5E4A3C",
+     "image": "/media/products/parde-blackout-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/parde-blackout-1.jpg",
+    "/media/products/parde-blackout-2.jpg",
+    "/media/products/parde-blackout-3.jpg",
+    "/media/products/parde-blackout-detail.jpg"
+   ]
+  },
+  {
+   "slug": "mobli-shanel",
+   "name": "شانل",
+   "category": "mobli",
+   "kind": "tweed",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "شانل با بافت بوکله، ضخیم و با دوام برای مبلمان.",
+   "description": "شانل پارچه‌ای ضخیم با بافت بوکله است که برای رویه مبل و صندلی استفاده می‌شود. دوام بالایی دارد و بافت آن جلوه‌ای گرم و مدرن می‌سازد.",
+   "colors": [
+    {
+     "name": "کرم",
+     "hex": "#D9CBB2",
+     "image": "/media/products/mobli-shanel-1.jpg"
+    },
+    {
+     "name": "طوسی",
+     "hex": "#8C8880",
+     "image": "/media/products/mobli-shanel-2.jpg"
+    },
+    {
+     "name": "صورتی",
+     "hex": "#C9A6A6",
+     "image": "/media/products/mobli-shanel-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/mobli-shanel-1.jpg",
+    "/media/products/mobli-shanel-2.jpg",
+    "/media/products/mobli-shanel-3.jpg",
+    "/media/products/mobli-shanel-detail.jpg"
+   ]
+  },
+  {
+   "slug": "mobli-mazrati",
+   "name": "مازراتی",
+   "category": "mobli",
+   "kind": "pile",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "مازراتی مبلی با سطح مخملی و مقاومت بالا.",
+   "description": "مازراتی مبلی پارچه‌ای با سطح مخملی و تراکم بالا است که برای رویه مبل و مبل کلاسیک مناسب است. در برابر سایش مقاوم است و رنگ خود را حفظ می‌کند.",
+   "colors": [
+    {
+     "name": "سبز",
+     "hex": "#3F4C3E",
+     "image": "/media/products/mobli-mazrati-1.jpg"
+    },
+    {
+     "name": "سرمه‌ای",
+     "hex": "#2A3648",
+     "image": "/media/products/mobli-mazrati-2.jpg"
+    },
+    {
+     "name": "خاکی",
+     "hex": "#7E7260",
+     "image": "/media/products/mobli-mazrati-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/mobli-mazrati-1.jpg",
+    "/media/products/mobli-mazrati-2.jpg",
+    "/media/products/mobli-mazrati-3.jpg",
+    "/media/products/mobli-mazrati-detail.jpg"
+   ]
+  },
+  {
+   "slug": "mobli-jasem",
+   "name": "جاسم",
+   "category": "mobli",
+   "kind": "jacquard",
+   "unit": "متر",
+   "minQty": 1,
+   "shortDescription": "جاسم با نقش‌های کلاسیک و بافت سنگین مبلی.",
+   "description": "جاسم پارچه‌ای مبلی با نقش‌های کلاسیک و وزن سنگین است که برای مبلمان استایل سنتی مناسب است. ظاهری فاخر دارد و در برابر فرسایش مقاوم است.",
+   "colors": [
+    {
+     "name": "طلایی",
+     "hex": "#B99C62",
+     "image": "/media/products/mobli-jasem-1.jpg"
+    },
+    {
+     "name": "قرمز",
+     "hex": "#6B2B2E",
+     "image": "/media/products/mobli-jasem-2.jpg"
+    },
+    {
+     "name": "سبز",
+     "hex": "#3C4E44",
+     "image": "/media/products/mobli-jasem-3.jpg"
+    }
+   ],
+   "images": [
+    "/media/products/mobli-jasem-1.jpg",
+    "/media/products/mobli-jasem-2.jpg",
+    "/media/products/mobli-jasem-3.jpg",
+    "/media/products/mobli-jasem-detail.jpg"
+   ]
+  }
+ ]
+}

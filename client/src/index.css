@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('/fonts/Vazirmatn-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('/fonts/Vazirmatn-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('/fonts/Vazirmatn-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('/fonts/Vazirmatn-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('/fonts/Vazirmatn-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lalezar';
+  src: url('/fonts/Lalezar-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-cream-100 font-sans text-ink antialiased;
+    font-feature-settings: 'ss01';
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-forest-700;
+  }
+  ::selection {
+    @apply bg-gold-200 text-forest-800;
+  }
+  input,
+  textarea,
+  select,
+  button {
+    font-family: inherit;
+  }
+  /* latin digits inside Persian text stay aligned */
+  .num {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-[1240px] px-4 md:px-8;
+  }
+
+  .btn {
+    @apply inline-flex select-none items-center justify-center gap-2 rounded-lg px-5 py-2.5 text-sm font-semibold transition-all duration-200 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply btn bg-forest-700 text-cream-100 hover:bg-forest-800 active:scale-[0.99];
+  }
+  .btn-hero {
+    @apply btn border border-gold-400/80 bg-forest-700/90 text-cream-100 hover:border-gold-300 hover:bg-gold-500 hover:text-forest-900;
+  }
+  .btn-gold {
+    @apply btn bg-gold-500 text-cream-50 hover:bg-gold-600;
+  }
+  .btn-outline {
+    @apply btn border border-gold-300/70 bg-cream-50 text-forest-700 hover:border-gold-500 hover:bg-gold-100/60;
+  }
+  .btn-ghost {
+    @apply btn border border-cream-100/25 text-cream-100 hover:border-gold-300/70 hover:text-gold-200;
+  }
+  .btn-sm {
+    @apply px-3 py-1.5 text-xs;
+  }
+
+  .card {
+    @apply rounded-xl border border-gold-200/70 bg-cream-50 shadow-card;
+  }
+
+  .input {
+    @apply w-full rounded-lg border border-cream-300 bg-cream-50 px-3.5 py-2.5 text-sm text-ink outline-none transition placeholder:text-ink/40 focus:border-gold-400 focus:ring-2 focus:ring-gold-200/60;
+  }
+  .label {
+    @apply mb-1.5 block text-xs font-semibold text-forest-700;
+  }
+  .hint {
+    @apply mt-1 text-[11px] leading-5 text-ink/55;
+  }
+  .error-text {
+    @apply mt-1 text-[11px] font-medium text-red-700;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1 rounded-md px-2 py-1 text-[11px] font-semibold;
+  }
+  .badge-gold {
+    @apply badge border border-gold-300/70 bg-gold-100/70 text-gold-700;
+  }
+  .badge-green {
+    @apply badge bg-forest-700 text-cream-100;
+  }
+  .badge-muted {
+    @apply badge bg-cream-200 text-ink/60;
+  }
+  .badge-red {
+    @apply badge bg-red-50 text-red-700;
+  }
+
+  .gold-rule {
+    @apply h-px w-full bg-gradient-to-l from-transparent via-gold-300/70 to-transparent;
+  }
+
+  .table-basic {
+    @apply w-full border-collapse text-right text-sm;
+  }
+  .table-basic th {
+    @apply whitespace-nowrap border-b border-gold-200/60 bg-cream-200/50 px-3 py-3 text-xs font-bold text-forest-700;
+  }
+  .table-basic td {
+    @apply border-b border-cream-300/70 px-3 py-3 align-middle;
+  }
+
+  .link-gold {
+    @apply text-gold-600 underline-offset-4 hover:text-gold-700 hover:underline;
+  }
+}
+
+/* thin, elegant scrollbars in horizontally scrolling rails */
+.rail-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+.rail-scroll::-webkit-scrollbar-thumb {
+  background: rgba(184, 134, 11, 0.35);
+  border-radius: 999px;
+}
+
+@keyframes az-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fade-up {
+  animation: az-fade-up 0.5s ease both;
+}

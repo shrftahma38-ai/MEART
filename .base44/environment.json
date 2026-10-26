@@ -1,0 +1,37 @@
+{
+  "previewPort": 3000,
+  "healthPath": "/",
+  "startCommand": "docker compose -f docker-compose.base44.yml up -d",
+  "secrets": [
+    {
+      "name": "ADMIN_EMAIL",
+      "description": "ایمیل ورود مدیر فروشگاه (پیش‌فرض توسعه: admin@arabzadeh.ir)",
+      "requiredAtBoot": false,
+      "generatedForDevelopment": false
+    },
+    {
+      "name": "ADMIN_PASSWORD",
+      "description": "رمز عبور مدیر فروشگاه؛ در محیط واقعی حتماً تغییر دهید (پیش‌فرض توسعه: admin1234)",
+      "requiredAtBoot": false,
+      "generatedForDevelopment": false
+    },
+    {
+      "name": "JWT_SECRET",
+      "description": "کلید امضای نشست کاربران؛ در محیط واقعی مقدار تصادفی و امن قرار دهید",
+      "requiredAtBoot": false,
+      "generatedForDevelopment": false
+    },
+    {
+      "name": "PAYMENT_GATEWAY_URL",
+      "description": "آدرس API درگاه پرداخت واقعی (اختیاری؛ تا ثبت نشدن آن پرداخت آنلاین غیرفعال می‌ماند)",
+      "requiredAtBoot": false,
+      "generatedForDevelopment": false
+    },
+    {
+      "name": "PAYMENT_GATEWAY_KEY",
+      "description": "کلید/مرچنت آیدی درگاه پرداخت واقعی (اختیاری)",
+      "requiredAtBoot": false,
+      "generatedForDevelopment": false
+    }
+  ]
+}
